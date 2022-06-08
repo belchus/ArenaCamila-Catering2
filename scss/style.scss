@@ -1,0 +1,172 @@
+@import "utilities/variables";
+
+
+body{
+    background-color: $ColorFondo;
+
+    header{
+        .logo{
+            height:100%;
+        
+        }
+        .nombre{
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        margin-top: 150px;
+        color: black;
+        position: absolute;
+        font-weight: 800;
+        }
+        .navbar{
+            background-color: $ColorNav;
+            padding: 1rem;
+            font-size: 2rem;
+        
+        .dropdown-menu{
+            background-color: $ColorNav;
+            padding: 0.1rem;
+            font-size: 2rem;
+           
+        }
+    }
+}
+    main{
+        .titulo{
+            text-align: center;
+            padding: 60px;
+            font-size: 80px;
+            font-family: 'Dancing Script', cursive;
+            color: white;
+        
+        }
+        .descripcion{
+            padding: 15px;
+            font-size: 30px;
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+        .carousel-item{
+            margin-top: 50px;
+            height:900px;
+            width: 1900px;
+        }
+
+        .padre{
+
+            display:  flex;
+            flex-wrap:  wrap;
+            justify-content: center;
+
+        .caja{
+                background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
+                width: 1500px;
+                height: 400px;
+                margin: 50px;
+                padding: 60px 100px 100px;
+                border-radius: 10px;
+                border: 3px solid black;
+                font-size: 25px;
+                text-align: center;
+            
+            }
+            .nosotrosfoto{
+                margin:20px
+            }
+        }
+
+        .imagen{
+            padding: 10px;
+            margin: 5px;
+            margin-top: 50px ;
+            width: 1850px;
+            height: 800px;
+        }
+        
+        .madre{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        
+        
+        
+        .hijo {
+            width: 600px;
+            height: 450px;
+            margin: 10px;
+            justify-content: center;
+        
+        .hijo:hover {
+            transform:scale(1.2);
+          
+        }
+    }
+    }
+    .fotonosotros{
+        width: 100%;
+    }
+    .madre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    
+     .card{
+        margin: 50px;
+        font-size: 25px;
+        text-align: center;
+        justify-content: center;
+        background-color: $ColorNav;
+     
+     .list-group-item{
+        background-color: $ColorNav;
+     }
+    }
+}
+
+    .formulario{
+ background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
+        width: 2000px;
+        height: 300px;
+        padding: 50px 100px 100px;
+        text-align: center;
+        justify-items: center;
+     }
+    }
+    
+        
+
+    
+        footer{
+            text-align: right;
+            color: black;
+            background-color:$ColorFooter;
+            margin-top: 2rem;
+        }
+    
+}
+
+
+
+@media (max-width: 480px) {
+    body{
+
+    header{
+        .logo{
+           height:100%;
+        }
+    }
+    .formulario{
+               width: 800px;
+               height: 600px;
+    }
+            .imagencontacto{
+                margin-top: 40px;
+            }
+            .caja{
+                height: 100vh;
+                font-size: 2px;
+            }
+}
+}

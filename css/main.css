@@ -1,0 +1,107 @@
+body {
+  background-color: #2b2929; }
+  body header .logo {
+    height: 100%; }
+  body header .nombre {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    margin-top: 150px;
+    color: black;
+    position: absolute;
+    font-weight: 800; }
+  body header .navbar {
+    background-color: #eed6c4;
+    padding: 1rem;
+    font-size: 2rem; }
+    body header .navbar .dropdown-menu {
+      background-color: #eed6c4;
+      padding: 0.1rem;
+      font-size: 2rem; }
+  body main .titulo {
+    text-align: center;
+    padding: 60px;
+    font-size: 80px;
+    font-family: 'Dancing Script', cursive;
+    color: white; }
+  body main .descripcion {
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    color: white; }
+  body main .carousel-item {
+    margin-top: 50px;
+    height: 900px;
+    width: 1900px; }
+  body main .padre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    body main .padre .caja {
+      background-image: linear-gradient(to left, #794343, #575050);
+      width: 1500px;
+      height: 400px;
+      margin: 50px;
+      padding: 60px 100px 100px;
+      border-radius: 10px;
+      border: 3px solid black;
+      font-size: 25px;
+      text-align: center; }
+    body main .padre .nosotrosfoto {
+      margin: 20px; }
+  body main .imagen {
+    padding: 10px;
+    margin: 5px;
+    margin-top: 50px;
+    width: 1850px;
+    height: 800px; }
+  body main .madre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    body main .madre .hijo {
+      width: 600px;
+      height: 450px;
+      margin: 10px;
+      justify-content: center; }
+      body main .madre .hijo .hijo:hover {
+        transform: scale(1.2); }
+  body main .fotonosotros {
+    width: 100%; }
+  body main .madre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    body main .madre .card {
+      margin: 50px;
+      font-size: 25px;
+      text-align: center;
+      justify-content: center;
+      background-color: #eed6c4; }
+      body main .madre .card .list-group-item {
+        background-color: #eed6c4; }
+  body main .formulario {
+    background-image: linear-gradient(to left, #794343, #575050);
+    width: 2000px;
+    height: 300px;
+    padding: 50px 100px 100px;
+    text-align: center;
+    justify-items: center; }
+  body footer {
+    text-align: right;
+    color: black;
+    background-color: #483434;
+    margin-top: 2rem; }
+
+@media (max-width: 480px) {
+  body header .logo {
+    height: 100%; }
+  body .formulario {
+    width: 800px;
+    height: 600px; }
+  body .imagencontacto {
+    margin-top: 40px; }
+  body .caja {
+    height: 100vh;
+    font-size: 2px; } }
