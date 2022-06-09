@@ -6,7 +6,7 @@ body main .descripcion {
 body {
   background-color: #2b2929; }
   body header .logo {
-    height: 100%; }
+    width: 100vw; }
   body header .nombre {
     text-align: center;
     font-family: 'Dancing Script', cursive;
@@ -50,7 +50,8 @@ body {
       font-size: 25px;
       text-align: center; }
     body main .padre .nosotrosfoto {
-      margin: 20px; }
+      text-align: center;
+      width: 100vw; }
   body main .madre {
     display: flex;
     flex-wrap: wrap;
@@ -91,20 +92,14 @@ body {
 
 @media screen and (max-width: 480px) {
   body .caja {
-    height: 90vh;
-    width: 80vw;
-    font-size: 10px; }
-  body .nosotrosfoto {
     display: none; }
-  body .caja {
-    width: 378px;
-    height: 1000px; }
   .formulario {
     font-size: 10px; } }
 
-@media screen and (max-width: 768px) {
-  body .padre .nosotrosfoto {
-    width: 100vh; }
-  body .padre .formulario {
+@media screen and (min-width: 481px) {
+  body .padre .caja {
+    width: 378px;
+    height: 1000px; }
+  body .formulario {
     font-size: 15px;
-    padding: 30px; } }
+    padding: 40px; } }
