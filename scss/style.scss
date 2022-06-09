@@ -59,7 +59,7 @@ body{
 
         .caja{
                 background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
-              @include sizes(40vw,50vh);
+              @include sizes(80vw,30vh);
                 margin: 50px;
                 padding: 60px 100px 100px;
                 border-radius: 10px;
@@ -142,7 +142,8 @@ body{
 
 .padre{
     .caja{
-        @include sizes(20vw,80vh);
+       height: 200px;
+        padding: 0px;
     }
 }
         .formulario{
@@ -160,7 +161,6 @@ body{
     }
     .formulario{
         font-size: 15px;
-        padding: 40px;
     }
 }
 }

@@ -41,8 +41,8 @@ body {
     justify-content: center; }
     body main .padre .caja {
       background-image: linear-gradient(to left, #794343, #575050);
-      height: 50vh;
-      width: 40vw;
+      height: 30vh;
+      width: 80vw;
       margin: 50px;
       padding: 60px 100px 100px;
       border-radius: 10px;
@@ -93,8 +93,8 @@ body {
     font-size: 10px;
     margin-top: 2px; }
   body .padre .caja {
-    height: 80vh;
-    width: 20vw; }
+    height: 200px;
+    padding: 0px; }
   body .formulario {
     font-size: 10px; } }
 
@@ -103,5 +103,4 @@ body {
     height: 80vh;
     width: 20vw; }
   body .formulario {
-    font-size: 15px;
-    padding: 40px; } }
+    font-size: 15px; } }
