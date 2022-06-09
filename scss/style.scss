@@ -1,5 +1,6 @@
 @import "utilities/variables";
-
+@import "utilities/mixin";
+@import "utilities/extends";
 
 body{
     background-color: $ColorFondo;
@@ -41,16 +42,13 @@ body{
         
         }
         .descripcion{
-            padding: 15px;
-            font-size: 30px;
+           @extend %descrip;
             text-align: center;
-            padding: 20px;
-            color: white;
+    
         }
         .carousel-item{
             margin-top: 50px;
-            height:900px;
-            width: 1900px;
+         @include sizes(1900px,900px);
         }
 
         .padre{
@@ -61,8 +59,7 @@ body{
 
         .caja{
                 background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
-                width: 1500px;
-                height: 400px;
+              @include sizes(80vw,40vh);
                 margin: 50px;
                 padding: 60px 100px 100px;
                 border-radius: 10px;
@@ -75,14 +72,6 @@ body{
                 margin:20px
             }
         }
-
-        .imagen{
-            padding: 10px;
-            margin: 5px;
-            margin-top: 50px ;
-            width: 1850px;
-            height: 800px;
-        }
         
         .madre{
             display: flex;
@@ -92,8 +81,7 @@ body{
         
         
         .hijo {
-            width: 600px;
-            height: 450px;
+            @include sizes(600px,450px);
             margin: 10px;
             justify-content: center;
         
@@ -127,8 +115,7 @@ body{
 
     .formulario{
  background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
-        width: 2000px;
-        height: 300px;
+        @include sizes(2000px,300px);
         padding: 50px 100px 100px;
         text-align: center;
         justify-items: center;
@@ -147,26 +134,41 @@ body{
     
 }
 
-
-
-@media (max-width: 480px) {
+@media screen and(max-width:480px){
     body{
 
-    header{
-        .logo{
-           height:100%;
+        .caja{
+           
+          @include sizes(80vw,90vh);
+          font-size: 10px;
+        
+        }
+        .nosotrosfoto{
+            display: none;
+        }
+        .caja{
+            width: 378px;
+            height: 1000px;
+        
         }
     }
-    .formulario{
-               width: 800px;
-               height: 600px;
+        .formulario{
+            font-size: 10px;
+        }
     }
-            .imagencontacto{
-                margin-top: 40px;
-            }
-            .caja{
-                height: 100vh;
-                font-size: 2px;
-            }
+
+
+@media screen and(max-width:768px){
+    body{
+        .padre{
+
+        .nosotrosfoto{
+           width:100vh;
+        }
+        .formulario{
+            font-size: 15px;
+            padding: 30px;
+        }
+    }
 }
 }
