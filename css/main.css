@@ -41,8 +41,8 @@ body {
     justify-content: center; }
     body main .padre .caja {
       background-image: linear-gradient(to left, #794343, #575050);
-      height: 40vh;
-      width: 80vw;
+      height: 50vh;
+      width: 40vw;
       margin: 50px;
       padding: 60px 100px 100px;
       border-radius: 10px;
@@ -63,8 +63,6 @@ body {
       justify-content: center; }
       body main .madre .hijo .hijo:hover {
         transform: scale(1.2); }
-  body main .fotonosotros {
-    width: 100%; }
   body main .madre {
     display: flex;
     flex-wrap: wrap;
@@ -91,15 +89,19 @@ body {
     margin-top: 2rem; }
 
 @media screen and (max-width: 480px) {
-  body .caja {
-    display: none; }
-  .formulario {
+  body .nombre {
+    font-size: 10px;
+    margin-top: 2px; }
+  body .padre .caja {
+    height: 80vh;
+    width: 20vw; }
+  body .formulario {
     font-size: 10px; } }
 
 @media screen and (min-width: 481px) {
   body .padre .caja {
-    width: 378px;
-    height: 1000px; }
+    height: 80vh;
+    width: 20vw; }
   body .formulario {
     font-size: 15px;
     padding: 40px; } }

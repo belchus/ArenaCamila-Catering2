@@ -59,7 +59,7 @@ body{
 
         .caja{
                 background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
-              @include sizes(80vw,40vh);
+              @include sizes(40vw,50vh);
                 margin: 50px;
                 padding: 60px 100px 100px;
                 border-radius: 10px;
@@ -91,9 +91,6 @@ body{
           
         }
     }
-    }
-    .fotonosotros{
-        width: 100%;
     }
     .madre{
         display: flex;
@@ -138,25 +135,27 @@ body{
 @media screen and(max-width:480px){
     body{
        
+.nombre{
+    font-size: 10px;
+    margin-top: 2px;
+}
 
-        .caja{
-           display: none;
-        
-        }
-
+.padre{
+    .caja{
+        @include sizes(20vw,80vh);
     }
+}
         .formulario{
             font-size: 10px;
         }
     }
-
+}
 
 @media screen and(min-width:481px){
     body{
         .padre{
 .caja{
-    width: 378px;
-    height: 1000px;
+    @include sizes(20vw,80vh);
 }
     }
     .formulario{
