@@ -7,7 +7,7 @@ body{
 
     header{
         .logo{
-            width:100vw;
+           background-image: 100vw;
         
         }
         .nombre{
@@ -54,23 +54,26 @@ body{
         .padre{
 
             display:  flex;
-            flex-wrap:  wrap;
             justify-content: center;
+
+        .sobremi{
+            color: white;
+            text-align: center;
+        }
 
         .caja{
                 background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
-              @include sizes(80vw,30vh);
-                margin: 50px;
+              @include sizes(80vw,60vh);
                 padding: 60px 100px 100px;
-                border-radius: 10px;
-                border: 3px solid black;
+                border-radius: 1px;
                 font-size: 25px;
                 text-align: center;
+
             
             }
             .nosotrosfoto{
                text-align: center;
-                width: 100vw;
+                width: 50vw;
             }
         }
         
@@ -141,9 +144,19 @@ body{
 }
 
 .padre{
+      .sobremi{
+          font-size: 8px;
+      }
+
     .caja{
-       height: 200px;
-        padding: 0px;
+
+      @include sizes(50vw,30vh);
+        padding: 30px 10px 10px;
+        border-radius: 1px;
+        font-size: 10px;
+        text-align: center;
+
+    
     }
 }
         .formulario{
