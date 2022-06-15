@@ -76,7 +76,6 @@ body{
                 width: 50vw;
             }
         }
-        
         .madre{
             display: flex;
             flex-wrap: wrap;
@@ -121,11 +120,13 @@ body{
         text-align: center;
         justify-items: center;
      }
+
+.imagencontacto{
+    width: 100vw;
+}
     }
     
         
-
-    
         footer{
             text-align: right;
             color: black;
@@ -144,17 +145,20 @@ body{
 }
 
 .padre{
+    
       .sobremi{
-          font-size: 8px;
-      }
+          font-size: 15px;
+          padding: 0px;
+          text-align: right;
 
+      }
     .caja{
 
-      @include sizes(50vw,30vh);
-        padding: 30px 10px 10px;
+      @include sizes(90vw,50vh);
+        padding: 0px;
         border-radius: 1px;
         font-size: 10px;
-        text-align: center;
+        text-align: right;
 
     
     }
