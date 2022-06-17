@@ -138,7 +138,8 @@ body{
 
 @media screen and(max-width:480px){
     body{
-       
+       main{
+
 .nombre{
     font-size: 10px;
     margin-top: 2px;
@@ -149,16 +150,18 @@ body{
       .sobremi{
           font-size: 15px;
           padding: 0px;
-          text-align: right;
+          text-align: center;
+          margin-top: 10px;
 
       }
     .caja{
 
       @include sizes(90vw,50vh);
-        padding: 0px;
+        padding: 5px;
         border-radius: 1px;
         font-size: 10px;
-        text-align: right;
+        text-align: center;
+       
 
     
     }
@@ -168,13 +171,34 @@ body{
         }
     }
 }
+}
 
 @media screen and(min-width:481px){
     body{
+        main{
+
+        
         .padre{
-.caja{
-    @include sizes(20vw,80vh);
-}
+    
+            .sobremi{
+                font-size: 16px;
+                padding: 0px;
+                text-align: center;
+                margin-top: 10px;
+      
+            }
+          .caja{
+      
+            @include sizes(90vw,50vh);
+              padding: 5px;
+              border-radius: 1px;
+              font-size: 10px;
+              text-align: center;
+             
+      
+          
+          }
+      }
     }
     .formulario{
         font-size: 15px;
@@ -182,3 +206,57 @@ body{
 }
 }
 
+
+@media screen and(min-width:700px){
+    body{
+        main{
+            .padre{
+                .sobremi{
+                    font-size: 21px;
+                    padding: 0px;
+                    text-align: center;
+                    margin-top: 20px;
+          
+                }
+                .caja{
+                    background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
+                  @include sizes(80vw,60vh);
+                    padding: 5px;
+                    border-radius: 1px;
+                    font-size: 25px;
+                    text-align: center;
+    
+                
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and(min-width:1000px){
+
+    body{
+        main{
+            .padre{
+                .sobremi{
+                    font-size: 25px;
+                    padding: 0px;
+                    text-align: center;
+                    margin-top: 30px;
+          
+                }
+                .caja{
+                    background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
+                  @include sizes(80vw,60vh);
+                    padding: 5px;
+                    border-radius: 1px;
+                    font-size: 25px;
+                    text-align: center;
+    
+                
+                }
+            }
+        }
+    }
+}
