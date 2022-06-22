@@ -3,7 +3,7 @@
 @import "utilities/extends";
 
 body{
-    background-color: $ColorFondo;
+    background-color: #778899;
 
     header{
         .logo{
@@ -20,12 +20,12 @@ body{
         font-weight: 800;
         }
         .navbar{
-            background-color: $ColorNav;
+            background-color:#2F4F4F;
             padding: 1rem;
             font-size: 2rem;
         
         .dropdown-menu{
-            background-color: $ColorNav;
+            background-color: #2F4F4F;
             padding: 0.1rem;
             font-size: 2rem;
            
@@ -38,7 +38,7 @@ body{
             padding: 60px;
             font-size: 80px;
             font-family: 'Dancing Script', cursive;
-            color: white;
+            color: rgb(0, 0, 0);
         
         }
         .descripcion{
@@ -57,12 +57,12 @@ body{
             justify-content: center;
 
         .sobremi{
-            color: white;
+            color: rgb(0, 0, 0);
             text-align: center;
         }
 
         .caja{
-                background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
+                background-image:linear-gradient( to left,rgb(161, 134, 165),rgb(87, 80, 80));
               @include sizes(80vw,60vh);
                 padding: 60px 100px 100px;
                 border-radius: 1px;
@@ -106,7 +106,7 @@ body{
         font-size: 25px;
         text-align: center;
         justify-content: center;
-        background-color: $ColorNav;
+        background-color: #2F4F4F;
         width: 900px;
 
      
@@ -117,7 +117,7 @@ body{
 }
 
     .formulario{
- background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
+        background-image:linear-gradient( to top,#fcfcfc,rgb(99, 99, 99));
         @include sizes(2000px,300px);
         padding: 50px 100px 100px;
         text-align: center;
@@ -127,14 +127,27 @@ body{
 .imagencontacto{
     width: 100vw;
 }
+
     }
-    
+    .iconos{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 200px;
+        background-color: #2F4F4F;
+        .icono{
+           text-align: center;
+           height: 4vh;
+           width: 2vw;
+           margin: 10px;
+        }
+       }
         
         footer{
             text-align: right;
             color: black;
-            background-color:$ColorFooter;
+            background-color:#778899;
             margin-top: 2rem;
+            text-decoration: none;
         }
     
 }
@@ -222,7 +235,7 @@ body{
           
                 }
                 .caja{
-                    background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
+                    background-image:linear-gradient( to left,#fcfcfc,rgb(99, 99, 99));
                   @include sizes(80vw,60vh);
                     padding: 5px;
                     border-radius: 1px;
@@ -250,7 +263,7 @@ body{
           
                 }
                 .caja{
-                    background-image:linear-gradient( to left,rgb(121, 67, 67),rgb(87, 80, 80));
+                    background-image:linear-gradient( to left,#fcfcfc,rgb(99, 99, 99));
                   @include sizes(80vw,60vh);
                     padding: 5px;
                     border-radius: 1px;

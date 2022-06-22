@@ -1,10 +1,10 @@
 body main .descripcion {
   font-size: 30px;
   padding: 20px;
-  color: white; }
+  color: black; }
 
 body {
-  background-color: #2b2929; }
+  background-color: #778899; }
   body header .logo {
     background-image: 100vw; }
   body header .nombre {
@@ -16,11 +16,11 @@ body {
     position: absolute;
     font-weight: 800; }
   body header .navbar {
-    background-color: #eed6c4;
+    background-color: #2F4F4F;
     padding: 1rem;
     font-size: 2rem; }
     body header .navbar .dropdown-menu {
-      background-color: #eed6c4;
+      background-color: #2F4F4F;
       padding: 0.1rem;
       font-size: 2rem; }
   body main .titulo {
@@ -28,7 +28,7 @@ body {
     padding: 60px;
     font-size: 80px;
     font-family: 'Dancing Script', cursive;
-    color: white; }
+    color: black; }
   body main .descripcion {
     text-align: center; }
   body main .carousel-item {
@@ -38,10 +38,10 @@ body {
     display: flex;
     justify-content: center; }
     body main .padre .sobremi {
-      color: white;
+      color: black;
       text-align: center; }
     body main .padre .caja {
-      background-image: linear-gradient(to left, #794343, #575050);
+      background-image: linear-gradient(to left, #a186a5, #575050);
       height: 60vh;
       width: 80vw;
       padding: 60px 100px 100px;
@@ -72,12 +72,12 @@ body {
       font-size: 25px;
       text-align: center;
       justify-content: center;
-      background-color: #eed6c4;
+      background-color: #2F4F4F;
       width: 900px; }
       body main .madre .card .list-group-item {
         background-color: #eed6c4; }
   body main .formulario {
-    background-image: linear-gradient(to left, #794343, #575050);
+    background-image: linear-gradient(to top, #fcfcfc, #636363);
     height: 300px;
     width: 2000px;
     padding: 50px 100px 100px;
@@ -85,11 +85,22 @@ body {
     justify-items: center; }
   body main .imagencontacto {
     width: 100vw; }
+  body .iconos {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 200px;
+    background-color: #2F4F4F; }
+    body .iconos .icono {
+      text-align: center;
+      height: 4vh;
+      width: 2vw;
+      margin: 10px; }
   body footer {
     text-align: right;
     color: black;
-    background-color: #483434;
-    margin-top: 2rem; }
+    background-color: #778899;
+    margin-top: 2rem;
+    text-decoration: none; }
 
 @media screen and (max-width: 480px) {
   body main .nombre {
@@ -133,7 +144,7 @@ body {
     text-align: center;
     margin-top: 20px; }
   body main .padre .caja {
-    background-image: linear-gradient(to left, #794343, #575050);
+    background-image: linear-gradient(to left, #fcfcfc, #636363);
     height: 60vh;
     width: 80vw;
     padding: 5px;
@@ -148,7 +159,7 @@ body {
     text-align: center;
     margin-top: 30px; }
   body main .padre .caja {
-    background-image: linear-gradient(to left, #794343, #575050);
+    background-image: linear-gradient(to left, #fcfcfc, #636363);
     height: 60vh;
     width: 80vw;
     padding: 5px;
