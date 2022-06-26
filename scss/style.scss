@@ -8,6 +8,8 @@ body{
     header{
         .logo{
            background-image: 100vw;
+           width:100vw;
+           
         
         }
         .nombre{
@@ -128,6 +130,10 @@ body{
     width: 100vw;
 }
 
+.cocinabyn{
+    width: 100vw;
+}
+
     }
     .iconos{
         text-align: center;
@@ -154,6 +160,12 @@ body{
 
 @media screen and(max-width:480px){
     body{
+        header{
+            .nombre{
+        margin-top: 20px;
+                font-size: 60px;
+            }
+        }
        main{
 
 .nombre{
@@ -191,6 +203,12 @@ body{
 
 @media screen and(min-width:481px){
     body{
+        header{
+            .nombre{
+        margin-top: 20px;
+                font-size: 60px;
+            }
+        }
         main{
 
         
@@ -225,6 +243,12 @@ body{
 
 @media screen and(min-width:700px){
     body{
+        header{
+            .nombre{
+        margin-top: 50px;
+                font-size: 100px;
+            }
+        }
         main{
             .padre{
                 .sobremi{
@@ -253,6 +277,17 @@ body{
 @media screen and(min-width:1000px){
 
     body{
+        header{
+        .nombre{
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 100px;
+            margin-top: 100px;
+            color: black;
+            position: absolute;
+            font-weight: 800;
+            }
+        }
         main{
             .padre{
                 .sobremi{
