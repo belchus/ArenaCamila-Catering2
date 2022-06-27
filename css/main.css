@@ -51,7 +51,8 @@ body {
       text-align: center; }
     body main .padre .nosotrosfoto {
       text-align: center;
-      width: 50vw; }
+      width: 50vw;
+      height: 60vh; }
   body main .madre {
     display: flex;
     flex-wrap: wrap;
@@ -87,7 +88,8 @@ body {
   body main .imagencontacto {
     width: 100vw; }
   body main .cocinabyn {
-    width: 100vw; }
+    width: 100vw;
+    height: 80vh; }
   body .iconos {
     text-align: center;
     font-size: 30px;
