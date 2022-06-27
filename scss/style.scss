@@ -3,7 +3,7 @@
 @import "utilities/extends";
 
 body{
-    background-color: #778899;
+    background-color:$ColorFondo;
 
     header{
         .logo{
@@ -22,12 +22,12 @@ body{
         font-weight: 800;
         }
         .navbar{
-            background-color:#2F4F4F;
+            background-color:$ColorNav;
             padding: 1rem;
             font-size: 2rem;
         
         .dropdown-menu{
-            background-color: #2F4F4F;
+            background-color:$ColorNav;
             padding: 0.1rem;
             font-size: 2rem;
            
@@ -59,12 +59,12 @@ body{
             justify-content: center;
 
         .sobremi{
-            color: rgb(0, 0, 0);
+            color: $ColorFooter;
             text-align: center;
         }
 
         .caja{
-                background-image:linear-gradient( to left,rgb(161, 134, 165),rgb(87, 80, 80));
+            background-image:linear-gradient( to left,#fcfcfc,rgb(99, 99, 99));
               @include sizes(80vw,60vh);
                 padding: 60px 100px 100px;
                 border-radius: 1px;
@@ -109,7 +109,7 @@ body{
         font-size: 25px;
         text-align: center;
         justify-content: center;
-        background-color: #2F4F4F;
+        background-color: $ColorNav;
         width: 900px;
 
      
@@ -140,8 +140,8 @@ height: 80vh;
     .iconos{
         text-align: center;
         font-size: 30px;
-        margin-top: 200px;
-        background-color: #2F4F4F;
+        margin-top: 100px;
+        background-color:$ColorNav;
         .icono{
            text-align: center;
            height: 4vh;
@@ -152,10 +152,14 @@ height: 80vh;
         
         footer{
             text-align: right;
-            color: black;
-            background-color:#778899;
+            color: white;
+            background-color:$ColorFooter;
             margin-top: 2rem;
             text-decoration: none;
+            a{
+                text-decoration: none;
+                color: white;
+            }
         }
     
 }
@@ -179,9 +183,8 @@ height: 80vh;
     
       .sobremi{
           font-size: 15px;
-          padding: 0px;
           text-align: center;
-          margin-top: 10px;
+          margin-top: 9px;
 
       }
     .caja{
@@ -191,11 +194,19 @@ height: 80vh;
         border-radius: 1px;
         font-size: 10px;
         text-align: center;
-       
-
     
     }
+    
+    .nosotrosfoto{
+    height: 50vh;
 }
+
+}
+
+.cocinabyn{
+    height:30vh;
+}
+
         .formulario{
             font-size: 10px;
         }
@@ -234,7 +245,14 @@ height: 80vh;
       
           
           }
+          .nosotrosfoto{
+            height: 50vh;
+        }
+        
       }
+      .cocinabyn{
+        height:30vh;
+    }
     }
     .formulario{
         font-size: 15px;
@@ -270,6 +288,10 @@ height: 80vh;
     
                 
                 }
+                .nosotrosfoto{
+                    height: 60vh;
+                }
+                
             }
         }
     }
@@ -309,6 +331,9 @@ height: 80vh;
     
                 
                 }
+            }
+            .cocinabyn{
+                height:70vh;
             }
         }
     }
