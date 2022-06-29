@@ -80,9 +80,9 @@ body {
         background-color: #2F4F4F; }
   body main .formulario {
     background-image: linear-gradient(to top, #fcfcfc, #636363);
-    height: 300px;
-    width: 2000px;
-    padding: 50px 100px 100px;
+    height: 40vh;
+    width: 100vw;
+    padding: 80px;
     text-align: center;
     justify-items: center; }
   body main .imagencontacto {
@@ -136,7 +136,16 @@ body {
   body main .cocinabyn {
     height: 30vh; }
   body main .formulario {
-    font-size: 10px; } }
+    font-size: 10px;
+    padding: 30px;
+    margin: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  body .iconos .icono {
+    text-align: center;
+    height: 3vh;
+    width: 5vw;
+    margin: 5px; } }
 
 @media screen and (min-width: 481px) {
   body header .nombre {
@@ -163,8 +172,18 @@ body {
     height: 50vh; }
   body main .cocinabyn {
     height: 30vh; }
-  body .formulario {
-    font-size: 15px; } }
+  body main .formulario {
+    font-size: 20px;
+    padding: 30px;
+    width: 100vw;
+    margin: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px; }
+  body .iconos .icono {
+    text-align: center;
+    height: 3vh;
+    width: 5vw;
+    margin: 5px; } }
 
 @media screen and (min-width: 700px) {
   body header .nombre {
@@ -184,7 +203,12 @@ body {
     font-size: 25px;
     text-align: center; }
   body main .padre .nosotrosfoto {
-    height: 60vh; } }
+    height: 60vh; }
+  body .iconos .icono {
+    text-align: center;
+    height: 5vh;
+    width: 5vw;
+    margin: 5px; } }
 
 @media screen and (min-width: 1000px) {
   body header .nombre {
@@ -209,4 +233,9 @@ body {
     font-size: 25px;
     text-align: center; }
   body main .cocinabyn {
-    height: 70vh; } }
+    height: 70vh; }
+  body .iconos .icono {
+    text-align: center;
+    height: 4vh;
+    width: 3vw;
+    margin: 5px; } }

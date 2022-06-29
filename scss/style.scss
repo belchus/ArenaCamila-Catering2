@@ -2,346 +2,415 @@
 @import "utilities/mixin";
 @import "utilities/extends";
 
-body{
-    background-color:$ColorFondo;
+body {
+    background-color: $ColorFondo;
 
-    header{
-        .logo{
-           background-image: 100vw;
-           width:100vw;
-           
-        
+    header {
+        .logo {
+            background-image: 100vw;
+            width: 100vw;
+
         }
-        .nombre{
-        text-align: center;
-        font-family: 'Dancing Script', cursive;
-        font-size: 100px;
-        margin-top: 150px;
-        color: black;
-        position: absolute;
-        font-weight: 800;
+
+        .nombre {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 100px;
+            margin-top: 150px;
+            color: black;
+            position: absolute;
+            font-weight: 800;
         }
-        .navbar{
-            background-color:$ColorNav;
+
+        .navbar {
+            background-color: $ColorNav;
             padding: 1rem;
             font-size: 2rem;
-        
-        .dropdown-menu{
-            background-color:$ColorNav;
-            padding: 0.1rem;
-            font-size: 2rem;
-           
+
+            .dropdown-menu {
+                background-color: $ColorNav;
+                padding: 0.1rem;
+                font-size: 2rem;
+
+            }
         }
     }
-}
-    main{
-        .titulo{
+
+    main {
+        .titulo {
             text-align: center;
             padding: 60px;
             font-size: 80px;
             font-family: 'Dancing Script', cursive;
             color: rgb(0, 0, 0);
-        
+
         }
-        .descripcion{
-           @extend %descrip;
+
+        .descripcion {
+            @extend %descrip;
             text-align: center;
-    
+
         }
-        .carousel-item{
+
+        .carousel-item {
             margin-top: 50px;
-         width:100vw;
+            width: 100vw;
         }
 
-        .padre{
+        .padre {
 
-            display:  flex;
+            display: flex;
             justify-content: center;
 
-        .sobremi{
-            color: $ColorFooter;
-            text-align: center;
-        }
+            .sobremi {
+                color: $ColorFooter;
+                text-align: center;
+            }
 
-        .caja{
-            background-image:linear-gradient( to left,#fcfcfc,rgb(99, 99, 99));
-              @include sizes(80vw,60vh);
+            .caja {
+                background-image: linear-gradient(to left, #fcfcfc, rgb(99, 99, 99));
+                @include sizes(80vw, 60vh);
                 padding: 60px 100px 100px;
                 border-radius: 1px;
                 font-size: 25px;
                 text-align: center;
 
-            
+
             }
-            .nosotrosfoto{
-               text-align: center;
+
+            .nosotrosfoto {
+                text-align: center;
                 width: 50vw;
                 height: 60vh;
             }
         }
-        .madre{
+
+        .madre {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-        
-        
-        
-        .hijo {
-            @include sizes(600px,450px);
-            margin: 10px;
-            justify-content: center;
-        
-        .hijo:hover {
-            transform:scale(1.2);
-          
+
+
+
+            .hijo {
+                @include sizes(600px, 450px);
+                margin: 10px;
+                justify-content: center;
+
+                .hijo:hover {
+                    transform: scale(1.2);
+
+                }
+            }
         }
+
+        .madre {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            .card {
+                margin: 50px;
+                margin-top: 80px;
+                font-size: 25px;
+                text-align: center;
+                justify-content: center;
+                background-color: $ColorNav;
+                width: 900px;
+
+
+                .list-group-item {
+                    background-color: $ColorNav;
+                }
+            }
+        }
+
+        .formulario {
+            background-image: linear-gradient(to top, #fcfcfc, rgb(99, 99, 99));
+            @include sizes(100vw, 40vh);
+            padding: 80px;
+            text-align: center;
+            justify-items: center;
+        }
+
+        .imagencontacto {
+            width: 100vw;
+        }
+
+        .cocinabyn {
+            width: 100vw;
+            height: 80vh;
+        }
+
     }
-    }
-    .madre{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    
-    
-     .card{
-        margin: 50px;
-     margin-top: 80px;
-        font-size: 25px;
-        text-align: center;
-        justify-content: center;
-        background-color: $ColorNav;
-        width: 900px;
 
-     
-     .list-group-item{
-        background-color: $ColorNav;
-     }
-    }
-}
-
-    .formulario{
-        background-image:linear-gradient( to top,#fcfcfc,rgb(99, 99, 99));
-        @include sizes(2000px,300px);
-        padding: 50px 100px 100px;
-        text-align: center;
-        justify-items: center;
-     }
-
-.imagencontacto{
-    width: 100vw;
-}
-
-.cocinabyn{
-    width: 100vw;
-height: 80vh;
-}
-
-    }
-    .iconos{
+    .iconos {
         text-align: center;
         font-size: 30px;
         margin-top: 100px;
-        background-color:$ColorNav;
-        .icono{
-           text-align: center;
-           height: 4vh;
-           width: 2vw;
-           margin: 10px;
+        background-color: $ColorNav;
+
+        .icono {
+            text-align: center;
+            height: 4vh;
+            width: 2vw;
+            margin: 10px;
         }
-       }
-        
-        footer{
-            text-align: right;
-            color: white;
-            background-color:$ColorFooter;
-            margin-top: 2rem;
+    }
+
+    footer {
+        text-align: right;
+        color: white;
+        background-color: $ColorFooter;
+        margin-top: 2rem;
+        text-decoration: none;
+
+        a {
             text-decoration: none;
-            a{
-                text-decoration: none;
-                color: white;
-            }
+            color: white;
         }
-    
+    }
+
 }
 
-@media screen and(max-width:480px){
-    body{
-        header{
-            .nombre{
-            margin-top: 10px;
+@media screen and(max-width:480px) {
+    body {
+        header {
+            .nombre {
+                margin-top: 10px;
                 font-size: 40px;
             }
         }
-       main{
-.madre{
-    .hijo {
-        @include sizes(300px,300px);
-        margin: 0px;
-        margin-top: 10px;
-        justify-content: center;
-    }
-}
-.padre{
-    
-      .sobremi{
-          font-size: 12px;
-          text-align: center;
-          margin-top:19px;
 
-      }
-    .caja{
+        main {
+            .madre {
+                .hijo {
+                    @include sizes(300px, 300px);
+                    margin: 0px;
+                    margin-top: 10px;
+                    justify-content: center;
+                }
+            }
 
-      @include sizes(90vw,50vh);
-        padding: 5px;
-        border-radius: 1px;
-        font-size: 10px;
-        text-align: center;
-    
-    }
-    
-    .nosotrosfoto{
-    height: 50vh;
-}
+            .padre {
 
-}
+                .sobremi {
+                    font-size: 12px;
+                    text-align: center;
+                    margin-top: 19px;
 
-.cocinabyn{
-    height:30vh;
-}
+                }
 
-        .formulario{
-            font-size: 10px;
+                .caja {
+
+                    @include sizes(90vw, 50vh);
+                    padding: 5px;
+                    border-radius: 1px;
+                    font-size: 10px;
+                    text-align: center;
+
+                }
+
+                .nosotrosfoto {
+                    height: 50vh;
+                }
+
+            }
+
+            .cocinabyn {
+                height: 30vh;
+            }
+
+            .formulario {
+                font-size: 10px;
+                padding: 30px;
+                margin: 12px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+
+        .iconos {
+            .icono {
+                text-align: center;
+                height: 3vh;
+                width: 5vw;
+                margin: 5px;
+            }
         }
     }
 }
-}
 
-@media screen and(min-width:481px){
-    body{
-        header{
-            .nombre{
-        margin-top: 20px;
+@media screen and(min-width:481px) {
+    body {
+        header {
+            .nombre {
+                margin-top: 20px;
                 font-size: 60px;
             }
         }
-        main{
 
-            .madre{
+        main {
+
+            .madre {
                 .hijo {
-                    @include sizes(400px,350px);
+                    @include sizes(400px, 350px);
                     margin: 10px;
                     justify-content: center;
                 }
             }
-        .padre{
-    
-            .sobremi{
-                font-size: 16px;
-                padding: 0px;
-                text-align: center;
-                margin-top: 10px;
-      
+
+            .padre {
+
+                .sobremi {
+                    font-size: 16px;
+                    padding: 0px;
+                    text-align: center;
+                    margin-top: 10px;
+
+                }
+
+                .caja {
+
+                    @include sizes(90vw, 50vh);
+                    padding: 5px;
+                    border-radius: 1px;
+                    font-size: 10px;
+                    text-align: center;
+
+                }
+
+                .nosotrosfoto {
+                    height: 50vh;
+                }
+
             }
-          .caja{
-      
-            @include sizes(90vw,50vh);
-              padding: 5px;
-              border-radius: 1px;
-              font-size: 10px;
-              text-align: center;
-             
-      
-          
-          }
-          .nosotrosfoto{
-            height: 50vh;
+
+            .cocinabyn {
+                height: 30vh;
+            }
+
+            .formulario {
+                font-size: 20px;
+                padding: 30px;
+                width: 100vw;
+                margin: 12px;
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
         }
-        
-      }
-      .cocinabyn{
-        height:30vh;
+
+        .iconos {
+            .icono {
+                text-align: center;
+                height: 3vh;
+                width: 5vw;
+                margin: 5px;
+            }
+        }
+
     }
-    }
-    .formulario{
-        font-size: 15px;
-    }
-}
 }
 
 
-@media screen and(min-width:700px){
-    body{
-        header{
-            .nombre{
-        margin-top: 50px;
+@media screen and(min-width:700px) {
+    body {
+        header {
+            .nombre {
+                margin-top: 50px;
                 font-size: 100px;
             }
         }
-        main{
-            .padre{
-                .sobremi{
+
+        main {
+            .padre {
+                .sobremi {
                     font-size: 21px;
                     padding: 0px;
                     text-align: center;
                     margin-top: 20px;
-          
+
                 }
-                .caja{
-                    background-image:linear-gradient( to left,#fcfcfc,rgb(99, 99, 99));
-                  @include sizes(80vw,60vh);
+
+                .caja {
+                    background-image: linear-gradient(to left, #fcfcfc, rgb(99, 99, 99));
+                    @include sizes(80vw, 60vh);
                     padding: 5px;
                     border-radius: 1px;
                     font-size: 25px;
                     text-align: center;
-    
-                
+
+
                 }
-                .nosotrosfoto{
+
+                .nosotrosfoto {
                     height: 60vh;
                 }
-                
+
+            }
+        }
+
+        .iconos {
+            .icono {
+                text-align: center;
+                height: 5vh;
+                width: 5vw;
+                margin: 5px;
             }
         }
     }
 }
 
 
-@media screen and(min-width:1000px){
+@media screen and(min-width:1000px) {
 
-    body{
-        header{
-        .nombre{
-            text-align: center;
-            font-family: 'Dancing Script', cursive;
-            font-size: 100px;
-            margin-top: 100px;
-            color: black;
-            position: absolute;
-            font-weight: 800;
+    body {
+        header {
+            .nombre {
+                text-align: center;
+                font-family: 'Dancing Script', cursive;
+                font-size: 100px;
+                margin-top: 100px;
+                color: black;
+                position: absolute;
+                font-weight: 800;
             }
         }
-        main{
-            .padre{
-                .sobremi{
+
+        main {
+            .padre {
+                .sobremi {
                     font-size: 25px;
                     padding: 0px;
                     text-align: center;
                     margin-top: 90px;
-          
+
                 }
-                .caja{
-                    background-image:linear-gradient( to left,#fcfcfc,rgb(99, 99, 99));
-                  @include sizes(80vw,60vh);
+
+                .caja {
+                    background-image: linear-gradient(to left, #fcfcfc, rgb(99, 99, 99));
+                    @include sizes(80vw, 60vh);
                     padding: 5px;
                     border-radius: 1px;
                     font-size: 25px;
                     text-align: center;
-    
-                
+
+
                 }
             }
-            .cocinabyn{
-                height:70vh;
+
+            .cocinabyn {
+                height: 70vh;
+            }
+        }
+
+        .iconos {
+            .icono {
+                text-align: center;
+                height: 4vh;
+                width: 3vw;
+                margin: 5px;
             }
         }
     }
